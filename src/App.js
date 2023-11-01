@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import {useState} from 'react';
 import './App.css';
 
 function App() {
+
+  const [word, setword] = useState(0)
+
+
+  const changeval=(op)=>{
+
+    if (op===1)
+    
+    {setword(word+1)}
+    else{
+      setword(word-1)
+    }
+    
+  }
+
+
+ 
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>COUNTERAPP</h1>
+      <button onClick={()=>changeval(1)}>+</button>
+      <h2>{word}</h2>
+      <button onClick={()=>changeval(0)}>-</button>
     </div>
   );
 }

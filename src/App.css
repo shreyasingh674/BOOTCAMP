@@ -1,38 +1,29 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://cdn.wallpapersafari.com/50/32/uD27pe.png");
+  background-size: cover;
+  font-size: xx-large;
+  font-style:italic ;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button{
+  height: 100px;
+  width: 100px;
+  background-color:  #9f2be2;
+  border-radius:40px;
+  font-size: 80px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover{
+  background-color:antiquewhite;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1:hover{
+  background-color: #5830b5;
+  color:#A0DAA9;
+  
 }
